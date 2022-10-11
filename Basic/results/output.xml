@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221010 21:48:27.656" rpa="false" schemaversion="3">
+<suite id="s1" name="Basic" source="C:\Users\DANIEL\Desktop\Basic">
+<suite id="s1-s1" name="Suites" source="C:\Users\DANIEL\Desktop\Basic\Suites">
+<suite id="s1-s1-s1" name="Day1" source="C:\Users\DANIEL\Desktop\Basic\Suites\day1.robot">
+<test id="s1-s1-s1-t1" name="User Shoud Be Able To Open Google Chrome Browser" line="7">
+<kw name="Open Browser With Google Chrome" library="Demoblaze_keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${DEMOBLAZE_URL}</arg>
+<arg>browser=${CHROME_BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221010 21:48:28.016" level="INFO">Opening browser 'gc' to base url 'https://www.demoblaze.com/index.html'.</msg>
+<status status="PASS" starttime="20221010 21:48:28.015" endtime="20221010 21:48:32.074"/>
+</kw>
+<status status="PASS" starttime="20221010 21:48:28.015" endtime="20221010 21:48:32.074"/>
+</kw>
+<kw name="Verify Demoblaze Logo Appears" library="Demoblaze_keywords">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221010 21:48:32.087" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.91)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00DC1ED3+2236115]
+	Ordinal0 [0x00D592F1+1807089]
+	Ordinal0 [0x00C666FD+812797]
+	Ordinal0 [0x00C4DFFA+712698]
+	Ordinal0 [0x00CB506B+1134699]
+	Ordinal0 [0x00CC514A+1200458]
+	Ordinal0 [0x00CB18A6+1120422]
+	Ordinal0 [0x00C8A73D+960317]
+	Ordinal0 [0x00C8B71F+964383]
+	GetHandleVerifier [0x0106E7E2+2743074]
+	GetHandleVerifier [0x010608D4+2685972]
+	GetHandleVerifier [0x00E52BAA+532202]
+	GetHandleVerifier [0x00E51990+527568]
+	Ordinal0 [0x00D6080C+1837068]
+	Ordinal0 [0x00D64CD8+1854680]
+	Ordinal0 [0x00D64DC5+1854917]
+	Ordinal0 [0x00D6ED64+1895780]
+	BaseThreadInitThunk [0x770DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x779C7B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x779C7B2E+238]
+</msg>
+<msg timestamp="20221010 21:48:32.114" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.91)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00DC1ED3+2236115]
+	Ordinal0 [0x00D592F1+1807089]
+	Ordinal0 [0x00C666FD+812797]
+	Ordinal0 [0x00C4DFFA+712698]
+	Ordinal0 [0x00CB506B+1134699]
+	Ordinal0 [0x00CC514A+1200458]
+	Ordinal0 [0x00CB18A6+1120422]
+	Ordinal0 [0x00C8A73D+960317]
+	Ordinal0 [0x00C8B71F+964383]
+	GetHandleVerifier [0x0106E7E2+2743074]
+	GetHandleVerifier [0x010608D4+2685972]
+	GetHandleVerifier [0x00E52BAA+532202]
+	GetHandleVerifier [0x00E51990+527568]
+	Ordinal0 [0x00D6080C+1837068]
+	Ordinal0 [0x00D64CD8+1854680]
+	Ordinal0 [0x00D64DC5+1854917]
+	Ordinal0 [0x00D6ED64+1895780]
+	BaseThreadInitThunk [0x770DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x779C7B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x779C7B2E+238]
+</msg>
+<status status="FAIL" starttime="20221010 21:48:32.077" endtime="20221010 21:48:32.121"/>
+</kw>
+<status status="FAIL" starttime="20221010 21:48:32.076" endtime="20221010 21:48:32.123"/>
+</kw>
+<kw name="Verify Top Menu Button Appears" library="Demoblaze_keywords">
+<status status="NOT RUN" starttime="20221010 21:48:32.126" endtime="20221010 21:48:32.128"/>
+</kw>
+<kw name="Verify Banner Appears" library="Demoblaze_keywords">
+<status status="NOT RUN" starttime="20221010 21:48:32.130" endtime="20221010 21:48:32.131"/>
+</kw>
+<kw name="Close Google Chrome Browser" library="Demoblaze_keywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221010 21:48:32.135" endtime="20221010 21:48:34.426"/>
+</kw>
+<status status="PASS" starttime="20221010 21:48:32.134" endtime="20221010 21:48:34.428"/>
+</kw>
+<status status="FAIL" starttime="20221010 21:48:28.013" endtime="20221010 21:48:34.430">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.91)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00DC1ED3+2236115]
+	Ordinal0 [0x00D592F1+1807089]
+	Ordinal0 [0x00C666FD+812797]
+	Ordinal0 [0x00C4DFFA+712698]
+	Ordinal0 [0x00CB506B+1134699]
+	Ordinal0 [0x00CC514A+1200458]
+	Ordinal0 [0x00CB18A6+1120422]
+	Ordinal0 [0x00C8A73D+960317]
+	Ordinal0 [0x00C8B71F+964383]
+	GetHandleVerifier [0x0106E7E2+2743074]
+	GetHandleVerifier [0x010608D4+2685972]
+	GetHandleVerifier [0x00E52BAA+532202]
+	GetHandleVerifier [0x00E51990+527568]
+	Ordinal0 [0x00D6080C+1837068]
+	Ordinal0 [0x00D64CD8+1854680]
+	Ordinal0 [0x00D64DC5+1854917]
+	Ordinal0 [0x00D6ED64+1895780]
+	BaseThreadInitThunk [0x770DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x779C7B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x779C7B2E+238]
+</status>
+</test>
+<test id="s1-s1-s1-t2" name="User Should Be Able To Login" line="12">
+<kw name="Open Browser With Google Chrome" library="Demoblaze_keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${DEMOBLAZE_URL}</arg>
+<arg>browser=${CHROME_BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221010 21:48:34.446" level="INFO">Opening browser 'gc' to base url 'https://www.demoblaze.com/index.html'.</msg>
+<status status="PASS" starttime="20221010 21:48:34.445" endtime="20221010 21:48:38.838"/>
+</kw>
+<status status="PASS" starttime="20221010 21:48:34.442" endtime="20221010 21:48:38.839"/>
+</kw>
+<kw name="Open Browser With Google Chrome" library="Demoblaze_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${DEMOBLAZE_URL}</arg>
+<arg>browser=${CHROME_BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221010 21:48:38.845" level="INFO">Opening browser 'gc' to base url 'https://www.demoblaze.com/index.html'.</msg>
+<status status="PASS" starttime="20221010 21:48:38.842" endtime="20221010 21:48:44.804"/>
+</kw>
+<status status="PASS" starttime="20221010 21:48:38.840" endtime="20221010 21:48:44.805"/>
+</kw>
+<kw name="Click Login Button In Homepage" library="Demoblaze_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Login_Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221010 21:48:44.812" level="INFO">Clicking element '//*[@id="login2"]'.</msg>
+<msg timestamp="20221010 21:48:44.830" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.91)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00DC1ED3+2236115]
+	Ordinal0 [0x00D592F1+1807089]
+	Ordinal0 [0x00C666FD+812797]
+	Ordinal0 [0x00C4DFFA+712698]
+	Ordinal0 [0x00CB506B+1134699]
+	Ordinal0 [0x00CC514A+1200458]
+	Ordinal0 [0x00CB18A6+1120422]
+	Ordinal0 [0x00C8A73D+960317]
+	Ordinal0 [0x00C8B71F+964383]
+	GetHandleVerifier [0x0106E7E2+2743074]
+	GetHandleVerifier [0x010608D4+2685972]
+	GetHandleVerifier [0x00E52BAA+532202]
+	GetHandleVerifier [0x00E51990+527568]
+	Ordinal0 [0x00D6080C+1837068]
+	Ordinal0 [0x00D64CD8+1854680]
+	Ordinal0 [0x00D64DC5+1854917]
+	Ordinal0 [0x00D6ED64+1895780]
+	BaseThreadInitThunk [0x770DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x779C7B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x779C7B2E+238]
+</msg>
+<msg timestamp="20221010 21:48:44.839" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.91)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00DC1ED3+2236115]
+	Ordinal0 [0x00D592F1+1807089]
+	Ordinal0 [0x00C666FD+812797]
+	Ordinal0 [0x00C4DFFA+712698]
+	Ordinal0 [0x00CB506B+1134699]
+	Ordinal0 [0x00CC514A+1200458]
+	Ordinal0 [0x00CB18A6+1120422]
+	Ordinal0 [0x00C8A73D+960317]
+	Ordinal0 [0x00C8B71F+964383]
+	GetHandleVerifier [0x0106E7E2+2743074]
+	GetHandleVerifier [0x010608D4+2685972]
+	GetHandleVerifier [0x00E52BAA+532202]
+	GetHandleVerifier [0x00E51990+527568]
+	Ordinal0 [0x00D6080C+1837068]
+	Ordinal0 [0x00D64CD8+1854680]
+	Ordinal0 [0x00D64DC5+1854917]
+	Ordinal0 [0x00D6ED64+1895780]
+	BaseThreadInitThunk [0x770DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x779C7B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x779C7B2E+238]
+</msg>
+<status status="FAIL" starttime="20221010 21:48:44.811" endtime="20221010 21:48:44.847"/>
+</kw>
+<status status="FAIL" starttime="20221010 21:48:44.808" endtime="20221010 21:48:44.849"/>
+</kw>
+<kw name="Input Username" library="Demoblaze_keywords">
+<status status="NOT RUN" starttime="20221010 21:48:44.850" endtime="20221010 21:48:44.851"/>
+</kw>
+<kw name="Input Password" library="Demoblaze_keywords">
+<status status="NOT RUN" starttime="20221010 21:48:44.852" endtime="20221010 21:48:44.852"/>
+</kw>
+<kw name="Click Login Button In Login Popup" library="Demoblaze_keywords">
+<status status="NOT RUN" starttime="20221010 21:48:44.853" endtime="20221010 21:48:44.853"/>
+</kw>
+<kw name="Close Google Chrome Browser" library="Demoblaze_keywords">
+<status status="NOT RUN" starttime="20221010 21:48:44.854" endtime="20221010 21:48:44.854"/>
+</kw>
+<kw name="Close Google Chrome Browser" library="Demoblaze_keywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221010 21:48:44.858" endtime="20221010 21:48:46.997"/>
+</kw>
+<status status="PASS" starttime="20221010 21:48:44.856" endtime="20221010 21:48:46.997"/>
+</kw>
+<status status="FAIL" starttime="20221010 21:48:34.437" endtime="20221010 21:48:46.998">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.91)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00DC1ED3+2236115]
+	Ordinal0 [0x00D592F1+1807089]
+	Ordinal0 [0x00C666FD+812797]
+	Ordinal0 [0x00C4DFFA+712698]
+	Ordinal0 [0x00CB506B+1134699]
+	Ordinal0 [0x00CC514A+1200458]
+	Ordinal0 [0x00CB18A6+1120422]
+	Ordinal0 [0x00C8A73D+960317]
+	Ordinal0 [0x00C8B71F+964383]
+	GetHandleVerifier [0x0106E7E2+2743074]
+	GetHandleVerifier [0x010608D4+2685972]
+	GetHandleVerifier [0x00E52BAA+532202]
+	GetHandleVerifier [0x00E51990+527568]
+	Ordinal0 [0x00D6080C+1837068]
+	Ordinal0 [0x00D64CD8+1854680]
+	Ordinal0 [0x00D64DC5+1854917]
+	Ordinal0 [0x00D6ED64+1895780]
+	BaseThreadInitThunk [0x770DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x779C7B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x779C7B2E+238]
+</status>
+</test>
+<status status="FAIL" starttime="20221010 21:48:27.708" endtime="20221010 21:48:47.004"/>
+</suite>
+<status status="FAIL" starttime="20221010 21:48:27.702" endtime="20221010 21:48:47.013"/>
+</suite>
+<status status="FAIL" starttime="20221010 21:48:27.665" endtime="20221010 21:48:47.018"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Basic">Basic</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Suites">Basic.Suites</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1-s1" name="Day1">Basic.Suites.Day1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221010 21:48:32.087" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.91)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00DC1ED3+2236115]
+	Ordinal0 [0x00D592F1+1807089]
+	Ordinal0 [0x00C666FD+812797]
+	Ordinal0 [0x00C4DFFA+712698]
+	Ordinal0 [0x00CB506B+1134699]
+	Ordinal0 [0x00CC514A+1200458]
+	Ordinal0 [0x00CB18A6+1120422]
+	Ordinal0 [0x00C8A73D+960317]
+	Ordinal0 [0x00C8B71F+964383]
+	GetHandleVerifier [0x0106E7E2+2743074]
+	GetHandleVerifier [0x010608D4+2685972]
+	GetHandleVerifier [0x00E52BAA+532202]
+	GetHandleVerifier [0x00E51990+527568]
+	Ordinal0 [0x00D6080C+1837068]
+	Ordinal0 [0x00D64CD8+1854680]
+	Ordinal0 [0x00D64DC5+1854917]
+	Ordinal0 [0x00D6ED64+1895780]
+	BaseThreadInitThunk [0x770DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x779C7B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x779C7B2E+238]
+</msg>
+<msg timestamp="20221010 21:48:44.830" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.91)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00DC1ED3+2236115]
+	Ordinal0 [0x00D592F1+1807089]
+	Ordinal0 [0x00C666FD+812797]
+	Ordinal0 [0x00C4DFFA+712698]
+	Ordinal0 [0x00CB506B+1134699]
+	Ordinal0 [0x00CC514A+1200458]
+	Ordinal0 [0x00CB18A6+1120422]
+	Ordinal0 [0x00C8A73D+960317]
+	Ordinal0 [0x00C8B71F+964383]
+	GetHandleVerifier [0x0106E7E2+2743074]
+	GetHandleVerifier [0x010608D4+2685972]
+	GetHandleVerifier [0x00E52BAA+532202]
+	GetHandleVerifier [0x00E51990+527568]
+	Ordinal0 [0x00D6080C+1837068]
+	Ordinal0 [0x00D64CD8+1854680]
+	Ordinal0 [0x00D64DC5+1854917]
+	Ordinal0 [0x00D6ED64+1895780]
+	BaseThreadInitThunk [0x770DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x779C7B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x779C7B2E+238]
+</msg>
+</errors>
+</robot>

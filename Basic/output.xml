@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221006 22:41:46.451" rpa="false" schemaversion="3">
+<suite id="s1" name="Day1" source="C:\Users\DANIEL\Desktop\Basic\day1.robot">
+<test id="s1-t1" name="User Should Be Able To Login" line="40">
+<kw name="Open Browser With Google Chrome">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${DEMOBLAZE_URL}</arg>
+<arg>browser=${CHROME_BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221006 22:41:46.622" level="INFO">Opening browser 'gc' to base url 'https://www.demoblaze.com/index.html'.</msg>
+<msg timestamp="20221006 22:41:49.683" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221006 22:41:49.684" level="FAIL">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=106.0.5249.91)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00241ED3+2236115]
+	Ordinal0 [0x001D92F1+1807089]
+	Ordinal0 [0x000E66FD+812797]
+	Ordinal0 [0x000E2C42+797762]
+	Ordinal0 [0x000D9C1D+760861]
+	Ordinal0 [0x000DA9FC+764412]
+	Ordinal0 [0x000D9E5F+761439]
+	Ordinal0 [0x000D9350+758608]
+	Ordinal0 [0x000D92C1+758465]
+	Ordinal0 [0x000D8113+753939]
+	Ordinal0 [0x000D861D+755229]
+	Ordinal0 [0x000E800E+819214]
+	Ordinal0 [0x001460CD+1204429]
+	Ordinal0 [0x00131A8C+1120908]
+	Ordinal0 [0x001459E2+1202658]
+	Ordinal0 [0x001318A6+1120422]
+	Ordinal0 [0x0010A73D+960317]
+	Ordinal0 [0x0010B71F+964383]
+	GetHandleVerifier [0x004EE7E2+2743074]
+	GetHandleVerifier [0x004E08D4+2685972]
+	GetHandleVerifier [0x002D2BAA+532202]
+	GetHandleVerifier [0x002D1990+527568]
+	Ordinal0 [0x001E080C+1837068]
+	Ordinal0 [0x001E4CD8+1854680]
+	Ordinal0 [0x001E4DC5+1854917]
+	Ordinal0 [0x001EED64+1895780]
+	BaseThreadInitThunk [0x7639FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F67B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F67B2E+238]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20221006 22:41:46.622" endtime="20221006 22:41:49.880"/>
+</kw>
+<status status="FAIL" starttime="20221006 22:41:46.621" endtime="20221006 22:41:49.881"/>
+</kw>
+<kw name="Click Login Button In Homepage">
+<status status="NOT RUN" starttime="20221006 22:41:49.881" endtime="20221006 22:41:49.881"/>
+</kw>
+<kw name="Input Username">
+<status status="NOT RUN" starttime="20221006 22:41:49.882" endtime="20221006 22:41:49.882"/>
+</kw>
+<kw name="Input Password">
+<status status="NOT RUN" starttime="20221006 22:41:49.882" endtime="20221006 22:41:49.882"/>
+</kw>
+<kw name="Click Login Button In Login Popup">
+<status status="NOT RUN" starttime="20221006 22:41:49.883" endtime="20221006 22:41:49.883"/>
+</kw>
+<kw name="Close Google Chrome Browser">
+<status status="NOT RUN" starttime="20221006 22:41:49.883" endtime="20221006 22:41:49.883"/>
+</kw>
+<status status="FAIL" starttime="20221006 22:41:46.621" endtime="20221006 22:41:49.883">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=106.0.5249.91)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00241ED3+2236115]
+	Ordinal0 [0x001D92F1+1807089]
+	Ordinal0 [0x000E66FD+812797]
+	Ordinal0 [0x000E2C42+797762]
+	Ordinal0 [0x000D9C1D+760861]
+	Ordinal0 [0x000DA9FC+764412]
+	Ordinal0 [0x000D9E5F+761439]
+	Ordinal0 [0x000D9350+758608]
+	Ordinal0 [0x000D92C1+758465]
+	Ordinal0 [0x000D8113+753939]
+	Ordinal0 [0x000D861D+755229]
+	Ordinal0 [0x000E800E+819214]
+	Ordinal0 [0x001460CD+1204429]
+	Ordinal0 [0x00131A8C+1120908]
+	Ordinal0 [0x001459E2+1202658]
+	Ordinal0 [0x001318A6+1120422]
+	Ordinal0 [0x0010A73D+960317]
+	Ordinal0 [0x0010B71F+964383]
+	GetHandleVerifier [0x004EE7E2+2743074]
+	GetHandleVerifier [0x004E08D4+2685972]
+	GetHandleVerifier [0x002D2BAA+532202]
+	GetHandleVerifier [0x002D1990+527568]
+	Ordinal0 [0x001E080C+1837068]
+	Ordinal0 [0x001E4CD8+1854680]
+	Ordinal0 [0x001E4DC5+1854917]
+	Ordinal0 [0x001EED64+1895780]
+	BaseThreadInitThunk [0x7639FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F67B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F67B2E+238]
+	(No symbol) [0x00000000]
+</status>
+</test>
+<status status="FAIL" starttime="20221006 22:41:46.453" endtime="20221006 22:41:49.888"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Day1">Day1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
